@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trust-calibrator"
+version = "0.1.0"
+description = "Dependency-free, piecewise-linear calibrator for trust/confidence scores."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["calibration", "confidence", "reliability", "uncertainty"]
+
+[project.scripts]
+trust-calibrator = "trust_calibrator:main"
+
+[tool.setuptools]
+py-modules = ["trust_calibrator"]
+
